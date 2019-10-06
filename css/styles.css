@@ -37,18 +37,19 @@ nav {
     height: 125px;
     background-image: url('../images/logo.gif');
     background-repeat: no-repeat;
-    padding-left: 450px;
+    padding-left: 400px;
     padding-top: 30px;
     background-position:7px left;
 }
 /* LAYOUT SELECTORS */
 header {
     width: inherit;
-    height: 235px;
+    height: 200px;
     background: url('../images/header.gif'); 
     background-repeat: no-repeat;   
-    background-position: center;
-   
+    background-position: top;
+    position: relative;
+    top: -30px;
 }
 
 section, aside {
@@ -66,46 +67,48 @@ section, aside {
 ul li {
     display: inline ;
     padding: 10px;
+    font-size: larger;
 }
 
 footer {
     border-top: solid 1px #DFE3E6 ;
     clear: both;
     text-align: center;
+    font-size: small;
     padding-top: 1em;
     color: #929CA4;
     margin: 10px;
 }
 
-p#prospect {
+section p:nth-child(4) {
     background-image: url('../images/logo_vprospect.gif');
     background-repeat: no-repeat;   
     background-position: left top;
     padding-left: 5em;
     
 }
-p#prospect::first-line {
+section p:nth-child(4)::first-line {
     font-weight: bold;
 }
 
-p#convert {
+section p:nth-child(5) {
     background-image: url('../images/logo_vconvert.gif');
     background-repeat: no-repeat;   
     background-position: left top;
     padding-left: 5em;
     
 }
-p#convert::first-line {
+section p:nth-child(5)::first-line {
     font-weight: bold;
 }
 
-p#retain {
+section p:nth-child(6) {
     background-image: url('../images/logo_vretain.gif');
     background-repeat: no-repeat;   
     background-position: left top;
     padding-left: 5em;
     
 }
-p#retain::first-line {
+section p:nth-child(6)::first-line {
     font-weight: bold;
 }
